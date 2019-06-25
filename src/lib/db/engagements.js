@@ -1,8 +1,8 @@
 import {getCollection, set, get, remove, allDocs} from './lib'
 
-const dbName = 'accounts'
+const dbName = 'engagements'
 
-export const accounts = {
+export const engagements = {
   getCollection: () => getCollection(dbName),
   set: set(dbName),
   get: get(dbName),
