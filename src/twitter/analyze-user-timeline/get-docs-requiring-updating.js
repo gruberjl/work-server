@@ -7,7 +7,7 @@ export const getDocsRequiringUpdating = async () => {
   const docs = await db.analytics.getCollection()
     .where('provider', '==', 'twitter')
     .where('lastUpdate', '<', dt)
-    .where('type', '==', 'follower-count')
+    .where('type', '==', 'user-timeline')
     .get()
     .then(db.snapshotToDocs)
     .catch(error => ({error}))
