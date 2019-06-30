@@ -29,10 +29,13 @@ export const updateAnalytic = async (analytic) => {
 
     obj.id = tweet.id
     obj.text = tweet.text
+    obj.retweetCount = tweet.retweetCount
+    obj.favoriteCount = tweet.favoriteCount
     if (moment(tweet.createdAt).isValid())
       obj.createdAt = moment(tweet.createdAt).toISOString()
     else
       obj.createdAt = moment().toISOString()
+
     obj.history[dt] = {
       retweetCount: tweet.retweetCount,
       favoriteCount: tweet.favoriteCount
