@@ -39,7 +39,7 @@
     "clone-deep": "^4.0.1",
     "firebase": "^6.1.0",
     "firebase-admin": "^8.1.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "pm2": "^3.5.1",
     "shortid": "^2.2.14",
     "snoowrap": "^1.16.0",
